@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Moon Miner</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="style.css" class="">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+  <header class="container-fluid bg-primary text-dark text-center">
+    <h1>THE MOON MINER EXPERIENCE</h1>
+  </header>
+
+  <main class="container-fluid">
+    <div class="row justify-content-between">
+      <div class="col-4 moon" id="target">
+
+      </div>
+      <div class="col-5 card">
+        <div class="card-body" id="stats">
+          <p>Cheese Mined: <span id="total-cheese"></span></p>
+          <p>Drills Drilling: <span id='drill-count'></span></p>
+          <p>Lasers Firing: <span id="laser-count"></span></p>
+          <p>Workers Working: <span id="worker-count"></span></p>
+          <p>Managers Managing: <span id="manager-count"></span></p>
+        </div>
+      </div>
+      <div class="col text-warning fw-bolder">
+        <h2>ACTIVE BUFFS</h2>
+        <p> Extra cheeses on click: <span id="click-buffs"></span></p>
+        <p> Extra cheeses per second: <span id="auto-upgrades"></span></p>
+      </div>
+    </div>
+    <div class="row justify-content-between">
+      <div class="col-4 card container-fluid bg-transparent">
+        <div class=" row card-body justify-content-around  text-success" id="buff-store">
+          <div class="col">
+            <p>Drill: <span id="drill-cost">20</span> cheeses Bonus: +1 cheese on click</p><button type="button"
+              class="btn btn-warning" onclick="buyC('drill')">BUY</button>
+            <p>Laser: <span id="laser-cost"></span> cheeses Bonus: +10 cheeses on click</p><button type="button"
+              class="btn btn-danger" onclick="buyC('laser')">BUY</button>
+            <p>Worker:<span id="worker-cost"></span> cheeses Bonus: +5 cheeses/second</p><button type="button"
+              class="btn btn-primary" onclick="buyA('worker')">BUY</button>
+            <p>Manager: <span id="manager-cost"></span> cheeses Bonus: +50 cheeses/sec</p><button type="button"
+              class="btn btn-success" onclick="buyA('manager')">BUY</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="container-fluid bg-primary text-danger">
+    <di class="row">
+      <div class="col">
+        <span>Made By RD</span>
+      </div>
+    </di>
+
+  </footer>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>

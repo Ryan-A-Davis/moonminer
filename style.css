@@ -1,0 +1,22 @@
+body{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main{
+  flex-grow: 1;
+  background-image: url("https://news.gsu.edu/files/2019/05/iStock-516189065.jpg");
+}
+
+header{
+  min-height: 8vh;
+}
+
+.moon:hover{
+  cursor: pointer;
+}
+
+footer{
+  min-height: 8vh;
+}
